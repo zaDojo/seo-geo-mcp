@@ -15,7 +15,7 @@ This skill reads saved answers, adds the pages behind them, and decides what to 
 
 The project-context tools are free and shared with the app and other agents.
 
-1. External MCP clients: resolve the project with `list_projects`, ask only if the match is ambiguous, then call `get_project_context`. In SAM, use the current project and context already injected into the conversation; SAM has no `get_project_context` tool and needs no project selection or connection setup.
+1. External MCP clients: resolve the project with `list_projects`, ask only if the match is ambiguous, then call `get_project_context`. In the Dojo Agent, use the current project and context already injected into the conversation; the Dojo Agent has no `get_project_context` tool and needs no project selection or connection setup.
 2. This skill needs `business_overview`, the website and the main competitors. If the overview is empty, infer it from the site, confirm it in one question, and save it with `update_project_context`.
 3. Read `get_ai_visibility_tracker`. Its prompts, competitors, engines, market and latest runs decide which path below applies. Check the tracker's own brand, the `brands` row with `own: true`. Its name is the project name. If that is not how people write the brand (for example a project named "Acme website"), answers that name the brand are not counted as mentions and brand questions are not treated as branded. Ask the user to rename the project in the app before collecting or interpreting answers.
 4. Reuse research-log findings under 30 days old for discovery. A claim that drives a recommendation still needs evidence from a run or a page read during this audit.
