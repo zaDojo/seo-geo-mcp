@@ -1,0 +1,17 @@
+{
+  "name": "zadojo",
+  "owner": {
+    "name": "zaDojo",
+    "email": "hello@zadojo.com"
+  },
+  "metadata": {
+    "description": "zaDojo's official Cursor plugin marketplace."
+  },
+  "plugins": [
+    {
+      "name": "zadojo",
+      "source": "plugins/openseo",
+      "description": "SEO made simple. Research keywords and competitors, audit sites, track rankings, and use Search Console data from your agent."
+    }
+  ]
+}

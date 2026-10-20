@@ -1,0 +1,25 @@
+{
+  "name": "zadojo",
+  "displayName": "zaDojo",
+  "version": "1.0.21",
+  "description": "Research keywords and competitors, audit sites, track rankings and AI visibility, and use connected Search Console data from your AI assistant.",
+  "author": {
+    "name": "zaDojo",
+    "url": "https://zadojo.com"
+  },
+  "homepage": "https://zadojo.com",
+  "privacyPolicyUrl": "https://zadojo.com/privacy",
+  "icon": "./assets/icon.png",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "keyword-research",
+    "serp",
+    "site-audit",
+    "backlinks",
+    "search-console",
+    "rank-tracking",
+    "local-seo",
+    "ai-visibility"
+  ]
+}
