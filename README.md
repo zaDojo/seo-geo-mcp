@@ -7,14 +7,14 @@ The zaDojo plugin and SEO skills for Claude Code, Codex and Cursor. It connects 
 Claude Code:
 
 ```
-claude plugin marketplace add liquiden/zadojo-plugins
+claude plugin marketplace add zadojo/zadojo-plugins
 claude plugin install zadojo@zadojo
 ```
 
 Codex:
 
 ```
-codex plugin marketplace add liquiden/zadojo-plugins
+codex plugin marketplace add zadojo/zadojo-plugins
 ```
 
 Full setup guides: [zadojo.com/docs](https://zadojo.com/docs/agent-setup).
