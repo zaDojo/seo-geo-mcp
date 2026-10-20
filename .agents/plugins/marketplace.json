@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "zadojo",
-      "source": "./plugins/openseo",
+      "source": "./plugins/seo-geo-mcp",
       "description": "SEO and AI visibility data for your agent: keyword research, live Google results, competitor rankings, backlinks, site audits, rank tracking, Search Console and Analytics. Twelve SEO skills plus the hosted zaDojo MCP server. €10/month with €10 of usage included.",
       "category": "Productivity"
     }

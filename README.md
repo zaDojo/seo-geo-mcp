@@ -73,23 +73,23 @@ Each skill is a `SKILL.md` workflow your agent follows step by step. In Claude C
 
 | Skill | What it does |
 | --- | --- |
-| [seo-project-setup](plugins/openseo/skills/seo-project-setup) | Saves your site, goals, positioning, competitors and key pages so every later skill reuses them |
-| [seo-coach](plugins/openseo/skills/seo-coach) | Explains where you stand and recommends one next step |
-| [seo-audit](plugins/openseo/skills/seo-audit) | Finds the few changes most likely to grow organic traffic that converts |
-| [keyword-research](plugins/openseo/skills/keyword-research) | Finds keyword opportunities, checks metrics and live results pages, saves the best ones |
-| [keyword-clustering](plugins/openseo/skills/keyword-clustering) | Groups keywords by search intent and maps each group to a page |
-| [competitive-landscape](plugins/openseo/skills/competitive-landscape) | Maps market leaders, winning content themes and gaps |
-| [competitor-analysis](plugins/openseo/skills/competitor-analysis) | Studies one competitor's rankings, content and backlinks |
-| [link-prospecting](plugins/openseo/skills/link-prospecting) | Finds link prospects and contact paths and drafts outreach |
-| [local-seo](plugins/openseo/skills/local-seo) | Audits a Google Business Profile and maps Google Maps rankings around a location |
-| [seo-report](plugins/openseo/skills/seo-report) | Saves finished work as a shareable HTML report in your zaDojo project |
+| [seo-project-setup](plugins/seo-geo-mcp/skills/seo-project-setup) | Saves your site, goals, positioning, competitors and key pages so every later skill reuses them |
+| [seo-coach](plugins/seo-geo-mcp/skills/seo-coach) | Explains where you stand and recommends one next step |
+| [seo-audit](plugins/seo-geo-mcp/skills/seo-audit) | Finds the few changes most likely to grow organic traffic that converts |
+| [keyword-research](plugins/seo-geo-mcp/skills/keyword-research) | Finds keyword opportunities, checks metrics and live results pages, saves the best ones |
+| [keyword-clustering](plugins/seo-geo-mcp/skills/keyword-clustering) | Groups keywords by search intent and maps each group to a page |
+| [competitive-landscape](plugins/seo-geo-mcp/skills/competitive-landscape) | Maps market leaders, winning content themes and gaps |
+| [competitor-analysis](plugins/seo-geo-mcp/skills/competitor-analysis) | Studies one competitor's rankings, content and backlinks |
+| [link-prospecting](plugins/seo-geo-mcp/skills/link-prospecting) | Finds link prospects and contact paths and drafts outreach |
+| [local-seo](plugins/seo-geo-mcp/skills/local-seo) | Audits a Google Business Profile and maps Google Maps rankings around a location |
+| [seo-report](plugins/seo-geo-mcp/skills/seo-report) | Saves finished work as a shareable HTML report in your zaDojo project |
 
 ### GEO and AEO (AI visibility)
 
 | Skill | What it does |
 | --- | --- |
-| [ai-prompt-research](plugins/openseo/skills/ai-prompt-research) | Finds the questions people ask AI about your market, how ChatGPT answers them and which sites get cited |
-| [ai-visibility-audit](plugins/openseo/skills/ai-visibility-audit) | A GEO and AEO audit: how your brand shows up in ChatGPT, Gemini and Google AI answers, and the few changes most likely to get you mentioned or cited |
+| [ai-prompt-research](plugins/seo-geo-mcp/skills/ai-prompt-research) | Finds the questions people ask AI about your market, how ChatGPT answers them and which sites get cited |
+| [ai-visibility-audit](plugins/seo-geo-mcp/skills/ai-visibility-audit) | A GEO and AEO audit: how your brand shows up in ChatGPT, Gemini and Google AI answers, and the few changes most likely to get you mentioned or cited |
 
 ## What the MCP server provides
 
@@ -143,7 +143,7 @@ Each skill is a `SKILL.md` workflow your agent follows step by step. In Claude C
 .claude-plugin/marketplace.json   Claude Code marketplace
 .agents/plugins/marketplace.json  Codex marketplace
 .cursor-plugin/marketplace.json   Cursor marketplace
-plugins/openseo/                  the zaDojo plugin: manifests, MCP config and skills
+plugins/seo-geo-mcp/                  the zaDojo plugin: manifests, MCP config and skills
 ```
 
 ## Support
