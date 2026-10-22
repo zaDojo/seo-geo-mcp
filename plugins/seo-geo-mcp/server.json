@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "com.zadojo/seo-geo-mcp",
+  "title": "zaDojo SEO and AI visibility",
+  "description": "SEO and AI visibility for agents: keywords, SERPs, backlinks, audits, rank and AI answer tracking.",
+  "version": "1.0.24",
+  "websiteUrl": "https://zadojo.com",
+  "repository": {
+    "url": "https://github.com/zadojo/seo-geo-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.zadojo.com/mcp"
+    }
+  ]
+}
