@@ -13,7 +13,8 @@ Quick links:
 - **Website:** [zadojo.com](https://zadojo.com)
 - **Agent setup docs:** [zadojo.com/docs/agent-setup](https://zadojo.com/docs/agent-setup)
 - **Remote MCP server:** `https://app.zadojo.com/mcp` (OAuth sign-in, works with any MCP client)
-- **Plan:** €10 a month with €10 of usage included. New accounts get €0.10 of trial credits with no card.
+- **Free Google Analytics and Search Console MCP:** the Free plan reads your GA4 and Google Search Console data with no credits, no card and no Google Cloud project. Guides: [Google Analytics MCP](https://zadojo.com/guides/google-analytics-mcp), [Google Search Console MCP](https://zadojo.com/google-search-console-mcp).
+- **Plans:** a Free plan, and paid plans from €10 a month with 10,000 credits for keyword, backlink, ranking and AI visibility data. New accounts get 100 trial credits with no card.
 
 ## Install
 
@@ -133,7 +134,9 @@ Each skill is a `SKILL.md` workflow your agent follows step by step. In Claude C
 
 **Which agents does it work with?** Claude Code, Claude Cowork, the Claude desktop app, Codex and Cursor through the plugin, and ChatGPT or any other MCP client through the remote MCP server.
 
-**What does it cost?** One plan at €10 a month with €10 of usage credits included every month. Search Console and Analytics reads, plain site audits, saved keywords and reports use no credits. Typical research costs a few cents per call; the tools show the cost before large batches.
+**What does it cost?** The Free plan covers Search Console and Google Analytics reads, site audits up to 50 pages, saved keywords and reports, with no card. Paid plans start at €10 a month with 10,000 credits (1,000 credits = €1) for research tools: a keyword research search is about 70 credits. The tools show the cost before large batches.
+
+**Is there a free Google Analytics or Search Console MCP?** Yes. Connect GA4 and Search Console in zaDojo with a Google sign-in and your agent reads them through this MCP server with no credits, on the Free plan.
 
 **Is the data estimated?** Search volumes and traffic figures are estimates, like in every SEO tool. Search Console shows measured clicks and impressions for your own site.
 
