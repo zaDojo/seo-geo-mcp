@@ -7,7 +7,7 @@ description: Find the questions people ask about a market, how ChatGPT answers t
 
 ## Goal
 
-Answer "What are people asking ChatGPT about my market, and who gets cited when they do?" with the questions in DataForSEO's dataset, ChatGPT's answers to them, and the sites the answers rely on. Keyword research finds what people type into Google; this finds what they ask an AI assistant.
+Answer "What are people asking ChatGPT about my market, and who gets cited when they do?" with the questions in zaDojo's question dataset, ChatGPT's answers to them, and the sites the answers rely on. Keyword research finds what people type into Google; this finds what they ask an AI assistant.
 
 The deliverable is a short ranked list of prompt groups worth caring about, with where the brand already appears, where it is missing, and which domains own the citations. Tracking those prompts is a separate decision the user makes in Prompt Tracking.
 
@@ -82,13 +82,13 @@ Deliver through the `seo-report` skill, saving with `skill: "ai-prompt-research"
 2. **Openings**: one `h3` per leading opening with representative prompts, the brand's presence, and the cited domains with their source type.
 3. **All prompt groups**: one table. Group | Example prompt | Prompts | Your site cited | Brand mentioned | Most-cited domains.
 4. **Prompts worth tracking**: the 10–20 exact prompts, grouped, ready to add with **Track selected** in the app.
-5. **How this report was made**: the fixed skill link line from `seo-report` (URL `https://zadojo.com/docs/skills/ai-prompt-research`, text "zaDojo AI Prompt Research skill"), the keywords researched, the market (US English), the research date, any prompt checked with `explore_prompt`, and a note that the questions and answers come from DataForSEO's dataset, built mostly from Google "People also ask" questions, not logged ChatGPT prompts or zaDojo's own collected answers.
+5. **How this report was made**: the fixed skill link line from `seo-report` (URL `https://zadojo.com/docs/skills/ai-prompt-research`, text "zaDojo AI Prompt Research skill"), the keywords researched, the market (US English), the research date, any prompt checked with `explore_prompt`, and a note that the questions and answers come from zaDojo's question dataset, built mostly from Google "People also ask" questions, not logged ChatGPT prompts or zaDojo's own collected answers.
 
 In chat, lead with one shareable line built from the evidence, for example: "ChatGPT's answers about AI meeting notes cite G2 and two Reddit threads, not your site." Then the report link.
 
 ## Guardrails
 
-- These are prompts from DataForSEO's dataset with the citations it recorded. They are not answers zaDojo collected, and they can differ from what ChatGPT says today. Prompt Tracking collects observed, dated answers, and `ai-visibility-audit` reads them. An `explore_prompt` spot check is one API answer, not a tracked observation.
+- These are prompts from zaDojo's question dataset with the citations recorded for them. They are not answers zaDojo collected, and they can differ from what ChatGPT says today. Prompt Tracking collects observed, dated answers, and `ai-visibility-audit` reads them. An `explore_prompt` spot check is one API answer, not a tracked observation.
 - Never estimate how often a question is asked in AI assistants, or turn prompt counts into users, traffic or revenue.
 - A prompt without a brand mention is an observation about that recorded answer, not proof the brand is never recommended.
 - Keep observations and proposals apart: "answers cite these three domains" is an observation; "get listed on them" is a proposal.
