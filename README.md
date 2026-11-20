@@ -16,6 +16,32 @@ Quick links:
 - **Free Google Analytics and Search Console MCP:** the Free plan reads your GA4 and Google Search Console data with no credits, no card and no Google Cloud project. Guides: [Google Analytics MCP](https://zadojo.com/guides/google-analytics-mcp), [Google Search Console MCP](https://zadojo.com/google-search-console-mcp).
 - **Plans:** a Free plan, and paid plans from €10 a month with 10,000 credits for keyword, backlink, ranking and AI visibility data. New accounts get 100 trial credits with no card.
 
+## Free Google Search Console and Google Analytics MCP in one line
+
+Most open-source Search Console and GA4 MCP servers run on your own machine and need a Google Cloud project, an enabled API and an OAuth client or service account file before they work. zaDojo is hosted: you sign in with Google once and your agent can read both.
+
+```bash
+claude mcp add --transport http --scope user zadojo https://app.zadojo.com/mcp
+```
+
+Any other MCP client takes the same URL: `https://app.zadojo.com/mcp`.
+
+| | zaDojo Free plan | A typical self-hosted GSC or GA4 MCP server |
+| --- | --- | --- |
+| Google Cloud project, API keys or credentials file | Not needed | Needed |
+| Local install (Python, Node or Docker) | Not needed | Needed |
+| Works in claude.ai and ChatGPT in the browser | Yes | No, it runs on your computer |
+| Search Console and GA4 in one server | Yes | Usually one server each |
+| Cost | Free, no card | Free |
+
+Then ask your agent things like:
+
+- "Which pages lost the most Search Console clicks in the last 28 days, and why?"
+- "Find queries where I rank 5 to 15 with a low click rate and suggest new titles."
+- "Show my GA4 organic landing pages with high traffic but few conversions."
+
+Keyword, backlink, rank tracking and AI visibility research use credits from a paid plan. If zaDojo saves you a setup, a star on this repo helps other people find it.
+
 ## Install
 
 ### Claude Code
