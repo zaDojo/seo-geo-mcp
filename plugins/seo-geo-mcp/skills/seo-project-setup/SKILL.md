@@ -1,6 +1,6 @@
 ---
 name: seo-project-setup
-description: Populate a project's shared zaDojo context — site scope, goals, positioning, competitors, key pages, and preferences — plus MCP checks and Search Console intake.
+description: Populate a project's shared zaDojo context (site scope, goals, positioning, competitors, key pages and preferences), check the MCP connection, and connect Search Console and Analytics.
 ---
 
 # zaDojo SEO Project Setup
@@ -114,11 +114,18 @@ Ask for or discover:
 
 Save the pages that actually matter with `addKeyPages` — money pages, topic hubs, and the linkable assets. This is a curated shortlist, not a site inventory: 10 to 30 URLs is normal. Give each one a `role` and, where known, the `topic` it targets.
 
-### 8. Connect Google Search Console
+### 8. Connect Google Search Console and Analytics
 
-GSC is the richest first-party signal: existing impressions, near-ranking terms, cannibalization, and pages that already have search demand.
+GSC is the richest first-party signal: existing impressions, near-ranking terms, cannibalization, and pages that already have search demand. GA4 adds what that traffic does on the site. Both are free.
 
-**Preferred (hosted): connect it natively.** On the project's Integrations page, connect Google Search Console and pull live data with `get_search_console_performance`. Once connected, the agent reads it directly in `keyword-research` and `keyword-clustering` — no manual files to maintain.
+**Preferred (hosted): connect them from here.**
+
+1. Call `list_search_console_sites`. If it lists sites, offer the one matching the project's domain (prefer the `sc-domain:` property) and bind it with `set_search_console_site` once the user agrees.
+2. If no Google account is linked, give the user the `connectUrl` it returns. Google's consent screen only runs in their browser, so explain they click Connect, approve Google and come back. Then call the list tool again and bind the site.
+3. Do the same for Analytics with `list_google_analytics_properties` and `set_google_analytics_property`.
+4. Confirm with a small `get_search_console_performance` read.
+
+A Google grant belongs to the user, not the project, so later projects only need step 1. Once connected, `keyword-research` and `keyword-clustering` read the data directly, with no manual files to maintain.
 
 **Fallback (self-hosted, or if the user prefers files):** ask the user to export CSVs from Search Console into a local working folder (see step 9).
 
